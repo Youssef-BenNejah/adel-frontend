@@ -4,7 +4,6 @@ import {
   LayoutDashboard,
   Package,
   ShoppingCart,
-  Users,
   Settings,
   LogOut,
   ExternalLink,
@@ -25,7 +24,6 @@ const NAV = [
   { to: '/admin/promotions', label: 'Promotions', icon: Tag },
   { to: '/admin/accueil', label: "Page d'accueil", icon: GalleryHorizontalEnd },
   { to: '/admin/commandes', label: 'Commandes', icon: ShoppingCart },
-  { to: '/admin/clients', label: 'Clients', icon: Users },
   { to: '/admin/parametres', label: 'Paramètres', icon: Settings },
 ]
 
@@ -97,7 +95,6 @@ export default function AdminLayout() {
           <button onClick={() => setNavOpen(true)} className="lg:hidden text-ink-700 p-1 shrink-0" aria-label="Ouvrir le menu">
             <Menu size={22} strokeWidth={1.5} />
           </button>
-          <span className="font-mono text-xs text-ink-400 hidden sm:inline">Connecté en tant que</span>
           <span className="font-mono text-xs text-clay-700 ml-auto">{session.username}</span>
         </header>
         <main className="p-4 sm:p-8">

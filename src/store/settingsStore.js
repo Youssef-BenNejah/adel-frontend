@@ -5,7 +5,7 @@ const DEFAULTS = {
   freeShippingThreshold: 150,
   shippingFee: 8,
   storeName: 'Adel Fragrances',
-  freeShippingCode: 'ALADIN10',
+  freeShippingCode: 'ADEL10',
 }
 
 const store = createAsyncStore(async () => {
